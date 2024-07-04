@@ -1,0 +1,14 @@
+<h1>Users are here</h1>
+<div>
+    <ul>
+        <li><button type="button" routerLink="details">Child A</button></li>
+        <li><button type="button" routerLink="form">Child B</button></li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li *ngFor="let car of cars"><button routerLink='car/{{car.id}}'>{{car.carName}}</button></li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>

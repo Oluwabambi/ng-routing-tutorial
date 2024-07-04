@@ -1,0 +1,5 @@
+<div>
+    <ul>
+        <li [ngClass]="{'selected': user.id % 2 == 0 }" *ngFor="let user of users">{{user.name}}</li>
+    </ul>
+</div>
